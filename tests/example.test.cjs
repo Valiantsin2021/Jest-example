@@ -6,7 +6,7 @@ describe('Test Airports API', () => {
     const body = response_raw.body
     expect([200, 201, 204, 207]).toContain(response_raw.status)
     expect(body['data'], 'Assert body["data"] is array').toBeInstanceOf(Array)
-    expect(body['data'].length, 'Assert body["data"] have length: 30').toBe(30)
+    expect(body['data'], 'Assert body["data"] have length: 30').toHaveLength(30)
     expect(body['data'][0]['id'], 'Assert body["data"][0]["id"] is a string "GKA"').toBe('GKA')
     expect(body['data'][0]['type'], 'Assert body["data"][0]["type"] is a string "airport"').toBe('airport')
     expect(

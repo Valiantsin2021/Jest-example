@@ -21,6 +21,10 @@ module.exports = {
       }
     ],
     'no-console': 'off',
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
     'no-useless-escape': 'off',
     'no-eval': 'error',
     'no-multi-spaces': 'error',

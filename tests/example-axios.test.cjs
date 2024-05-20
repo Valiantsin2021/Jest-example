@@ -1,9 +1,9 @@
-import request from 'supertest'
+import axios from 'axios'
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 describe('Test Airports API', () => {
   test(`GET all airports`, async () => {
-    const response_raw = await request('https://airportgap.com/api').get('/airports')
-    const body = response_raw.body
+    const response_raw = await axios.get('https://airportgap.com/api/airports')
+    const body = response_raw.data
     expect([200, 201, 204, 207]).toContain(response_raw.status)
     expect(body['data'], 'Assert body["data"] is array').toBeInstanceOf(Array)
     expect(body['data'], 'Assert body["data"] have length: 30').toHaveLength(30)

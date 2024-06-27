@@ -32,7 +32,7 @@ module.exports = {
     'no-return-assign': 'warn',
     'comma-dangle': ['error', 'never'],
     'func-call-spacing': ['error', 'never'],
-    'max-len': ['off', { code: 250, ignoreComments: true }],
+    'max-len': ['off', { code: 120, ignoreComments: true }],
     'new-cap': ['error', { newIsCap: true }],
     'new-parens': 'error',
     quotes: ['warn', 'single', { avoidEscape: true, allowTemplateLiterals: true }],

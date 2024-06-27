@@ -160,6 +160,10 @@ const config = {
   // testRunner: "jest-circus/runner",
 
   // A map from regular expressions to paths to transformers
+  testEnvironment: 'allure-jest/node',
+  testEnvironmentOptions: {
+    resultsDir: './allure-results'
+  },
   transform: {
     '^.+\\.cjs?$': 'babel-jest'
   },

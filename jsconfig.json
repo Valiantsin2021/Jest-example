@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonJS",
+    "target": "ES2023",
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": [
+        "utils/*"
+      ]
+    }
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
